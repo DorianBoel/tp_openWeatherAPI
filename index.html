@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Météo FR</title>
+    <meta name="description" content="">
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+
+<body>
+    <h1><i class="fas fa-sun"></i> Map Météo FR</h1>
+    <div>
+        <label for="search">Entrez le nom d'une ville: </label>
+        <input type="text" id="search" placeholder="Ex: Marseille, Bordeaux, Lyon...">
+        <input type="button" id="submit" value="Envoyer"> <br>
+        <input type="button" id="sort" value="Trier par ordre alphabétique">
+    </div>
+    <hr>
+    <main>
+        <div id="meteo-list">
+            <article class="meteo-card" id="card-template">
+                <div class="buttons-div">
+                    <button class="refresh"><i class="fas fa-redo"></i></button>
+                    <button class="close"><i class="fas fa-times"></i></button>
+                </div>
+                <h3 class="city-name">Ville</h3>
+                <img src="" alt="" loading="lazy">
+                <ul>
+                    <li class="sky">ciel</li>
+                    <li class="temperature">Température: </li>
+                    <li class="humidity">Humidité: </li>
+                    <li class="wind">Vent: </li>
+                </ul>
+            </article>
+        </div>
+    </main>
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>

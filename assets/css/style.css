@@ -1,0 +1,83 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5d80dba6b97e2f5b4a6cf517/1629640338776-XYXNDRS98XUEU5B5QYZY/taylor-van-riper-yQorCngxzwI-unsplash.jpg?format=1000w");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 3rem;
+}
+
+input#search {
+    width: 10.3rem;
+    color: transparent;
+}
+
+input#submit {
+    height: 26px;
+}
+
+hr {
+    margin: 2rem 0 4rem;
+}
+
+h1 > i {
+    color: rgb(255, 208, 0);
+}
+
+div#meteo-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 80%;
+    margin: auto;
+}
+
+article {
+    border-radius: 5%;
+    width: 16rem;
+    background-color: rgba(32, 178, 171, 0.700);
+    padding: 0.5rem 0;
+    display: none;
+}
+
+article > h3 {
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-top: 2px;
+}
+
+article > img {
+    margin: -44px 30% 0;
+}
+
+article > ul {
+    margin-top: -20px;
+}
+
+button.refresh, button.close {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+}
+
+button.refresh:active, button.close:active {
+    color: rgba(255, 255, 255, 0.781);
+}
+
+button.refresh:hover {
+    animation: 0.5s ease-out forwards 0s 1 rotate;
+}
+
+div.buttons-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes rotate {
+    100% {transform: rotate(360deg)};
+}
